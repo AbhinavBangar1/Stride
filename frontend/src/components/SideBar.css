@@ -1,0 +1,28 @@
+.sidebar-container {
+    width: 15vw;
+    background-color: rgba(18, 127, 195, 0.856);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.sidebar-tabs {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: large;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;    
+    padding-left: 1.0rem;
+}
+
+.sidebar-tabs:hover{
+    background-color: rgba(18, 127, 195, 0.941);
+}

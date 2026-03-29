@@ -1,23 +1,46 @@
 .Schedule-container{
-    border: 2px red solid;
+    border: 1px black solid;
     display: flex;
     width: 90vw;
     height: 90vh;
     flex-direction: column;
-    border-top-left-radius: 20px ;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
 }
 
 .month-container{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     height: 10%;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px;
     background-color: rgba(18, 127, 195, 0.856);
+    padding: 0px;
+    margin: 0px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.jump-button{
+    margin: 12px;
+    height: 60%;
+    border-radius: 50%;
+    background-color: rgba(18, 127, 195, 0.856);
+    border : none ;
+}
+
+.month-text{
+    font-weight: 700;
+    /* border: 2px red solid; */
+    height: 90%;
+    padding: 0px;
+    margin: 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .days-container{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     flex-direction: row;
     height: 10%;
@@ -28,10 +51,25 @@
     border: 2px red solid;
     display : flex ;
     width : 14.12%;
-        
+    align-items: center;
+    justify-content: center;
+}
+
+.days-box:hover{
+    background-color: beige;
 }
 
 .calender-container{
-    border: 2px red solid;
-    height: 70%;
+    /* border: 2px red solid; */
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+
+}
+.date-box{
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
