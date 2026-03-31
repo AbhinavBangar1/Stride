@@ -47,16 +47,18 @@
     justify-content: space-between;
 }
 
-.days-box{
-    border: 2px red solid;
-    display : flex ;
-    width : 14.12%;
-    align-items: center;
+.date-box {
+    position: relative;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.days-box:hover{
-    background-color: beige;
+.date-number {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 12px;
 }
 
 .calender-container{

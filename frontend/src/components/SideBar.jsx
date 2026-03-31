@@ -5,6 +5,7 @@ import { MdDashboard } from "react-icons/md" ;
 import { GrSchedule } from "react-icons/gr";
 import { TbChalkboard } from "react-icons/tb";
 import { BiCross } from "react-icons/bi";
+import { FaProjectDiagram } from "react-icons/fa";
 
 
 function SideBar(){
@@ -13,7 +14,8 @@ function SideBar(){
         { name: 'Todos', icon: <FaList /> },
         { name: 'Schedule', icon: <GrSchedule /> },
         { name: 'WhiteBoard', icon: <TbChalkboard /> },
-        { name: 'Tracker', icon: <BiCross /> }
+        { name: 'Tracker', icon: <BiCross /> } ,
+        { name: 'Projects' , icon: <FaProjectDiagram />}
     ];
 
     const [currTab , setCurrTab] = useState('DashBoard');
@@ -24,7 +26,7 @@ function SideBar(){
                 <div key={tab.name}>
                 <button className='sidebar-tabs' onClick={() => setCurrTab(tab.name)}>
                     {tab.icon}
-                    <span style={{ marginLeft: '1rem' }}>{tab.name}</span>
+                    <span style={{ marginLeft: '1rem' , fontSize : '1rem'}}>{tab.name}</span>
                 </button>
                 </div>
             ))}

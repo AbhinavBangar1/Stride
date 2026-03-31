@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      <SideBar/>
-      {/* <Schedule/> */}
+      {/* <SideBar/> */}
+      <Schedule/>
     </>
   )
 }
