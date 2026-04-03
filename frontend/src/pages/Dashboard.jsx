@@ -1,10 +1,16 @@
-function Dashboard() {
+import './Dashboard.css'
+
+function Dashboard(){
+    const [task, setTask] = useState('');
+    const [schedule, setSchedule] = useState([]);
+    
     return (
-        <div>
-            <h1>Dashboard</h1>
-            <p>Welcome Back!</p>
-        </div>
+        <>
+            <div className='dashboard-container'>
+                
+            </div>
+        </>
     );
 }
 
-export default Dashboard;
+export default Dashboard ;
