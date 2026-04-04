@@ -18,7 +18,7 @@ oAuth2Client.setCredentials({
   refresh_token: REFRESH_TOKEN,
 });
 
-async function sendEmail(send_to) {
+async function sendEmail({to , subject , text , html}) {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -36,9 +36,10 @@ async function sendEmail(send_to) {
 
     const info = await emailSender.sendMail({
       from: "stride.task@gmail.com",
-      to: send_to,
-      subject: "Test Email",
-      text: "Hello",
+      to ,
+      subject ,
+      text ,
+      html ,
     });
 
     console.log("Email sent:", info.response);
