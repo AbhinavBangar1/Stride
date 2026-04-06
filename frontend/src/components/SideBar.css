@@ -1,36 +1,104 @@
 .sidebar-container {
     width: 15vw;
-    background-color: rgb(0, 0, 0);
+    background : #f5f5f5;
+    height: 96vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    padding-top: 3rem;
+    padding: 2vh 2vh;
+    padding-bottom: 3vh;
+    justify-content: space-between;
 }
 
-.sidebar-container:hover{
-    width : 15vw ;
+.site-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    margin-top: 1.5vh;
+    padding-left: 12px;
 }
 
-.sidebar-tabs {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    height: 15vh;
-    text-align: left;
-    font-size: large;
-    font-weight: bolder;
-    font-size: 1rem;
-    color: rgba(224, 239, 16, 0.903);    
-    padding-left: 1.0rem;
+.site-logo{
+    /* width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 12px; */
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
 }
 
-.sidebar-tabs:hover{
-    background-color:rgba(181, 194, 6, 0.903);
+.site-name {
+    /* background: transparent;
     color: black;
-    transition: 0.3s ease-in-out;
-    transform: translateY(5px);
+    border: none;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px; */
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+.tabs-top{
+    /* border: 3px solid red; */
+    /* display: flex;
+    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab{
+    /* border: 3px solid orange; */
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    gap: 14px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    color: #555;
+}
+
+.tab:hover{
+    background-color: #eaeaea;
+}
+
+.active-tab{
+    background-color: #ffffff;
+    color: #111;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tab-icon{
+    font-size: 20px;
+    color: inherit;
+}
+
+.tab-name{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.logout-icon {
+    color: #c51b08;
+}
+
+.tab:last-child:hover {
+    background-color: #fde0e0;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: #c4c4c4;
+    margin: 10px 0 12px 0;
 }

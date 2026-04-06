@@ -1,11 +1,12 @@
 import './Header.css';
-
-function Header(){
-    return(
+import {useNavigate} from "react-router"
+function Header(){ 
+    let navigate = useNavigate() ;
+    return(    
         <>
             <div className='header-container'>
-                <button className='site-name'>Stride</button>
-                
+                <button className='site-name' onClick={() => navigate("/")}>Stride</button>
+                <button className></button>
             </div>
         </>
     );

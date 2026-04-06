@@ -1,14 +1,16 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   align-items: center;
+  /* background-color: #282c3400; */
 }
 
 body{
     margin : 0 ;
     min-height: 100vh ;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: center; */
+    /* padding: 20px; */
     box-sizing: border-box;
+    border-radius: 2px red solid;
 }

@@ -1,6 +1,7 @@
 import './App.css' ;
 import Schedule from './pages/Schedule.jsx' ;
 import SideBar from './components/SideBar.jsx' ;
+import Header from './components/Header.jsx'
 import { useState } from 'react' ;
 import Dashboard from './pages/Dashboard.jsx'  ;
 import Whiteboard from './pages/Whiteboard.jsx' ;
@@ -14,7 +15,9 @@ function App() {
 
   return (
     <>
-        <Routes>
+        {/* <Header/> */}
+        <SideBar/>
+        {/* <Routes>
           <Route path="/" element = {<Dashboard />} />
           <Route path="/todo" element = {<Todo />} />
           <Route path="/schedule" element = {<Schedule />} />
@@ -22,7 +25,7 @@ function App() {
           <Route path="/tracker" element = {<Tracker />} />
           <Route path="/projects" element = {<Projects />} />
           <Route path="/profile" element = {<Profile/>} />
-        </Routes>
+        </Routes> */}
     </>
   )
 }
