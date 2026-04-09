@@ -1,0 +1,56 @@
+.settings-container{
+    background-color: #F5F5F5;
+    /* border: 2px solid rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.settings-main{
+    border-radius: 17px;
+    background-color: rgba(128, 128, 128, 0.686);
+    
+}
+
+.settings-top{
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.settings-bottom{
+    display: flex;
+    flex: 1;
+}
+
+.settings-left {
+    flex: 1;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-right: 1px solid #ddd;
+}
+
+.left-tabs {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.left-tabs:hover {
+    background-color: #f0f0f0;
+}
+
+.settings-right {
+    flex: 4;
+    background: white;
+    /* padding: 20px; */
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

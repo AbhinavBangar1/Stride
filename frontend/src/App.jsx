@@ -9,6 +9,8 @@ import Tracker from './pages/Tracker.jsx' ;
 import Todo from './pages/Todo.jsx' ;
 import Projects from './pages/Projects.jsx' ;
 import Profile from './pages/Profile.jsx' ;
+import Settings from './pages/Settings.jsx'
+import Focus from './pages/Focus.jsx';
 import {Routes , Route } from 'react-router-dom' ;
 
 function App() {
@@ -17,15 +19,19 @@ function App() {
     <>
         {/* <Header/> */}
         <SideBar/>
-        {/* <Routes>
-          <Route path="/" element = {<Dashboard />} />
-          <Route path="/todo" element = {<Todo />} />
-          <Route path="/schedule" element = {<Schedule />} />
-          <Route path="/whiteboard" element = {<Whiteboard />} />
-          <Route path="/tracker" element = {<Tracker />} />
-          <Route path="/projects" element = {<Projects />} />
-          <Route path="/profile" element = {<Profile/>} />
-        </Routes> */}
+        <div style = {{marginLeft : "17vw"}}>
+          <Routes>
+            <Route path="/" element = {<Dashboard />} />
+            <Route path="/todos" element = {<Todo />} />
+            <Route path="/schedule" element = {<Schedule />} />
+            <Route path="/whiteboard" element = {<Whiteboard />} />
+            <Route path="/tracker" element = {<Tracker />} />
+            <Route path="/projects" element = {<Projects />} />
+            <Route path="/profile" element = {<Profile/>} />
+            <Route path="/focus" element = {<Focus/>}/>
+            <Route path="/settings" element = {<Settings />}/>
+          </Routes>
+        </div>
     </>
   )
 }
